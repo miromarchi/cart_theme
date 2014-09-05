@@ -1,0 +1,336 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+/* Trick to hide one fielter from map view (to allow sinc filtering of two panes) */
+#views-exposed-form-cart-view-map-panel-pane-1 {
+    display: none;
+}
+
+body {
+    background:#ffffff;
+}
+
+/* Responsive */
+.img-responsive {
+    margin: 0 8px 8px 0;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-cover {
+    width: 100%;
+}
+
+.views-field-field-cart-image img {
+    margin-bottom: 20px;
+}
+
+.wwww {
+    font-size: 5em;
+    margin-bottom: 4em;
+}
+
+.leaflet-popup-content .date-display-start:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f073";
+    padding-right: 8px;
+    font-size: 1.3em;
+}
+.leaflet-popup-content .venue:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f041";
+    padding-right: 8px;
+    font-size: 1.3em;
+}
+.view-cart-view-map .views-exposed-widgets {
+/*    background:#2BDE84;*/
+/*    background:#f8f8f8;*/
+    padding:0 8px 8px 8px;
+    margin-bottom:8px;
+/*    color:#999999;*/
+    border: 1px solid #f8f8f8;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+
+}
+.view-cart-view-map .views-exposed-widget{
+    max-width:360px;
+}
+.view-cart-view-map #edit-date-filter-wrapper input, .view-cart-view-map #edit-date-filter-1-wrapper input {
+    max-width:160px;
+}
+/* Fonts */
+h4.field-content {
+    margin-bottom: 4px;
+}
+
+h1.site-title {
+    font-size: 4em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.node-cart-vmode-minimal h2 {
+    display: none;
+}
+.node-cart-vmode-minimal .panel-display {
+/*    display: inline-block;*/
+    float: left;
+    padding: 4px;
+}
+.node-cart-vmode-minimal .panel-display img {
+    float: none!important;   
+}
+
+section.when:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f073";
+    padding-right: 8px;
+    font-size: 3em;
+/*    float:left;*/
+}
+section.who:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f0c0";
+    padding-right: 8px;
+    font-size: 3em;
+/*    float:left;*/
+}
+section.where:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f041";
+    padding-right: 8px;
+    font-size: 3em;
+/*    float:left;*/
+}
+section.what:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f0a1";
+    padding-right: 8px;
+    font-size: 3em;
+/*    float:left;*/
+}
+section.when, section.where, section.what, section.who {
+    clear:both;
+    min-height:5em;
+/*    padding-top:.6em;*/
+/*    padding-right:1em;*/
+/*    padding-bottom:1em;*/
+    border-bottom:1px solid #666;
+    width: 100%;
+}
+section.when>div.field, section.where>div.field, section.what>div.field, section.who>div.field {
+    width: 85%;
+    position:relative;
+    left:56px;
+    top:-42px;
+    margin:0;
+    padding:4px;
+}
+
+.exhibit {
+    margin-bottom:7px;
+}
+.exhibit h4{
+    margin-top:-2px;
+}
+h3.node-title {
+    margin-bottom:0;
+}
+.cv-exhibit {
+    clear:both;
+}
+
+#content-complete-percent-bar-wrapper {
+    border:0;
+    padding:0;
+}
+.content-complete-percent-bar-leq-25 {
+    background:#D9534F;
+}
+.content-complete-percent-bar-leq-50 {
+    background:#F0AD4E;
+}
+.content-complete-percent-bar-leq-75 {
+    background:#5BC0DE;
+}
+.content-complete-percent-bar-leq-100 {
+    background:#428BCA;
+}
+.content-complete-percent-bar-100 {
+    background:#5CB75C;
+}
+/* fields inline */
+
+.field-name-field-cart-artist .field-item {
+    float: left;
+}
+.field-name-field-cart-artist .field-item:after {
+    content: ",\00a0";
+}
+.field-name-field-cart-artist .field-item:last-child:after {
+    content: ".";
+}
+.field-name-field-cart-curator .field-item {
+    float: left;
+}
+.field-name-field-cart-curator .field-item:after {
+    content: ",\00a0";
+}
+.field-name-field-cart-curator .field-item:last-child:after {
+    content: ".";
+}
+.field-name-field-cart-sponsor .field-item {
+    float: left;
+}
+.field-name-field-cart-sponsor .field-item:after {
+    content: ",\00a0";
+}
+.field-name-field-cart-sponsor .field-item:last-child:after {
+    content: ".";
+}
+.field-name-field-cart-catalog .field-item {
+    float: left;
+}
+.field-name-field-cart-catalog .field-item:after {
+    content: ",\00a0";
+}
+.field-name-field-cart-catalog .field-item:last-child:after {
+    content: ".";
+}
+.field-type-taxonomy-term-reference .field-item {
+    float: left;
+}
+.field-type-taxonomy-term-reference .field-item:after {
+    content: ",\00a0";
+}
+.field-type-taxonomy-term-reference .field-item:last-child:after {
+    content: ".";
+}
+.street-block, .form-item-field-cart-based-und-0-postal-code {
+    display:none;
+}
+.node-cart-organization .field-name-field-cart-location, .node-cart-organization .field-name-field-cart-venue-boolean, .node-cart-organization .field-type-taxonomy-term-reference, .node-cart-organization .field-name-body {
+    padding:4px;
+}
+
+.navbar.container {
+    margin-top: 4px;
+}
+.navbar {
+    margin-bottom: 8px;
+}
+.view-cart-view-links .views-field {
+    padding-right:8px;
+}
+#leaflet-map {
+    margin-bottom:8px;
+}
+.card {
+    background:#ffffff;
+    padding:0;
+    border:1px solid #f3f3f3;
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+}
+.masonry-item{
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.card > div {
+    padding:0 10px 10px 10px;
+}
+.card .views-field-field-cart-image{
+    padding:0!important;
+}
+.card .img-responsive.img-circle {
+    margin: 0 12px 8px 0;
+}
+.card h2.pane-title {
+    font-size:22px;
+    margin-bottom:0;
+}
+.card .pane-node-content {
+    padding:0 10px 10px 10px;
+}
+.card .pane-node-content .field {
+    padding-bottom:8px;
+}
+.node-cart-catalog>.content>.field {
+    padding:0 10px 10px 0;
+
+}
+.node-type-cart-catalog h2.pane-title {
+    margin-top:0;
+}
+/* Calendar */
+.view .date-nav-wrapper .date-prev a, .view .date-nav-wrapper .date-next a {
+    padding: 5px;
+    background: none;
+}
+.calendar-calendar div.calendar {
+    font-size: small;
+}
+.calendar-calendar .month-view .full td.multi-day div.monthview,
+.calendar-calendar .week-view .full td.multi-day div.weekview,
+.calendar-calendar .day-view .full td.multi-day div.dayview {
+    background: #27AB78;
+}
+.calendar-calendar .month-view .full td.multi-day div.monthview a,
+.calendar-calendar .week-view .full td.multi-day div.weekview a,
+.calendar-calendar .day-view .full td.multi-day div.dayview a {
+    color: #ffffff;
+}
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
+  background: #27AB78;
+  -moz-border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 5px 5px 0px;
+}
+.calendar-calendar .day-view td .stripe,
+.calendar-calendar .month-view .full td .stripe,
+.calendar-calendar .week-view .full td .stripe {
+  height: 4px;
+}

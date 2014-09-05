@@ -1,0 +1,18 @@
+<?php
+// Plugin definition
+$plugin = array(
+  'title' => t('Multi'),
+  'icon' => 'multi.png',
+  'category' => t('Cart responsive'),
+  'theme' => 'multi',
+  'css' => 'multi.css',
+  'regions' => array(
+    'header' => t('Header'),
+    'one' => t('Column 1'),
+    'two' => t('Column 2'),
+    'three' => t('Column 3'),
+    'four' => t('Column 4'),
+    'left' => t('Big left'),
+    'right' => t('Big right'),
+  ),
+);
