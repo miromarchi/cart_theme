@@ -1,44 +1,132 @@
-/**
- * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
- * remove this comment and start adding your styles to this file.
- */
 /* Trick to hide one fielter from map view (to allow sinc filtering of two panes) */
 #views-exposed-form-cart-view-map-panel-pane-1 {
     display: none;
 }
-
+/* MAIN */
+a{
+    color:#000;
+}
+a:hover{
+    color:#00B4A0;
+}
 body {
-    background:#ffffff;
+    background:#fefefe;
+    color:#56544C;
+}
+h1.site-title {
+    font-size: 4em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.tb-rl {
+/*    writing-mode: tb-rl;*/
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    transform-origin: center center;
+    font-size: 12em;
+    line-height:50px;
+    position: relative;
+    left: 15px;
+}
+
+.form-control{
+    background:#fefefe;
 }
 
 /* Responsive */
 .img-responsive {
     margin: 0 8px 8px 0;
 }
-
 .center {
   margin-left: auto;
   margin-right: auto;
 }
-
 .center img {
   margin-left: auto;
   margin-right: auto;
 }
-
-.img-cover {
+.img-cover{
     width: 100%;
 }
-
-.views-field-field-cart-image img {
+.views-field-field-cart-image img{
     margin-bottom: 20px;
 }
 
-.wwww {
-    font-size: 5em;
-    margin-bottom: 4em;
+/* NAVBAR */
+@media(max-width:768px){
+    ul.secondary{
+        float:none!important;
+    }
+}
+.front .navbar{
+    margin-bottom:0;
+}
+.navbar {
+    border-radius:0;
+    background-color:#E5E5B5;
+}
+.navbar-nav>li>a{
+    color:#333333!important;
+}
+.navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
+    color: #555;
+    background-color: #F8B820!important;
+    border-left:1px solid #fefefe;
+    border-right:1px solid #fefefe;
+}
+.navbar-default{
+    border-color:#fefefe;
+}
+.navbar-brand{
+    color:#333!important;
+    font-weight:bold;
+}
+a.logo{
+    margin-top:4px;
+    margin-bottom:3px;
+}
+.logo img{
+    width:43px;
+}
+.navbar .logo {
+    padding-right:0;
 }
 
+/* FRONT PAGE */
+.front-focus{
+    font-size:22px;
+}
+.front-focus h1{
+    font-size:32px;
+    font-weight:bold;
+    word-wrap: break-word;
+    padding-top:30px;
+    letter-spacing:8px;
+    color:#333;
+}
+.front-logo {
+    float:left;
+}
+.front-logo-r{
+    float:right;
+}
+.norow-1 {
+    background-color:#00B4A0;
+}
+.norow-1, .norow-2, .norow-3{
+    border-bottom:15px solid #E5E5B5;
+    padding-top:3em;
+    padding-bottom:3em;
+}
+.front-map, .front-calendar {
+    border: 4px solid #E5E5B5;
+}
+p.p-links{
+
+}
+
+/* MAP */
 .leaflet-popup-content .date-display-start:before {
     font-family: FontAwesome;
     font-weight: normal;
@@ -59,12 +147,83 @@ body {
     padding-right: 8px;
     font-size: 1.3em;
 }
-.view-cart-view-map .views-exposed-widgets {
+#leaflet-map {
+    margin-bottom:8px;
+}
+
+/* CALENDAR */
+.calendar-calendar{
+    color:inherit!important;
+}
+.view .date-nav-wrapper .date-prev a, .view .date-nav-wrapper .date-next a {
+    padding: 5px;
+    background: none;
+}
+.calendar-calendar div.calendar {
+    font-size: small;
+}
+.dayview, .weekview, .monthview{
+    background: #E5E5B5!important;
+/*    border:1px solid #fff!important;*/
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+    color:inherit!important;
+}
+.calendar-calendar .continues{
+    width:auto!important;
+    margin-right:3px!important;
+    background: #E5E5B5!important;
+}
+.calendar-calendar .cutoff{
+    background: #E5E5B5!important;
+}
+
+.week-view .full div.single-day div.weekview, .day-view .full div.single-day div.dayview {
+    border-left: 2px solid #fefefe!important;
+    border-right:none!important;
+    border-top:none!important;
+    border-bottom:none!important;
+}
+.calendar-calendar .stripe{
+    height: 4px;
+}
+#multi-day-container{
+    height:auto!important;
+}
+#single-day-container{
+    min-height:150px!important;
+    max-height:900px!important;
+}
+/* TODAY */
+.calendar-calendar .month-view .full td.date-box.today {
+    border-width: 2px 2px 0 2px;
+    border-style: solid;
+    border-color: #F8B820;
+}
+.calendar-calendar .month-view .full tr td.single-day.today {
+    border-bottom: 2px solid #F8B820;
+}
+.calendar-calendar .month-view .full tr td.today,
+.calendar-calendar .month-view .full tr.odd td.today,
+.calendar-calendar .month-view .full tr.even td.today {
+    border-left: 2px solid #F8B820;
+    border-right: 2px solid #F8B820;
+}
+.today {
+    background-color: #F8B820!important;
+/*    border:none!important;*/
+}
+
+.view .date-nav-wrapper .date-nav{
+    max-height:30px!important;
+}
+
+/* VIEWS EXPOSED FILTERS */
+.views-exposed-widgets {
 /*    background:#2BDE84;*/
 /*    background:#f8f8f8;*/
     padding:0 8px 8px 8px;
     margin-bottom:8px;
-/*    color:#999999;*/
     border: 1px solid #f8f8f8;
     -webkit-border-bottom-right-radius: 4px;
     -webkit-border-bottom-left-radius: 4px;
@@ -74,38 +233,20 @@ body {
     border-bottom-left-radius: 4px;
     -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
-
 }
-.view-cart-view-map .views-exposed-widget{
+.views-exposed-widget{
     max-width:360px;
 }
-.view-cart-view-map #edit-date-filter-wrapper input, .view-cart-view-map #edit-date-filter-1-wrapper input {
+#edit-date-filter-wrapper input,#edit-date-filter-1-wrapper input {
     max-width:160px;
 }
-/* Fonts */
-h4.field-content {
-    margin-bottom: 4px;
+/* BADGES */
+.badge{
+    background-color:#56544C;
 }
 
-h1.site-title {
-    font-size: 4em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.node-cart-vmode-minimal h2 {
-    display: none;
-}
-.node-cart-vmode-minimal .panel-display {
-/*    display: inline-block;*/
-    float: left;
-    padding: 4px;
-}
-.node-cart-vmode-minimal .panel-display img {
-    float: none!important;   
-}
-
-section.when:before {
+/* WHAT WHEN WHERE WHO */
+.when:before {
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
@@ -113,10 +254,9 @@ section.when:before {
     text-decoration: inherit;
     content: "\f073";
     padding-right: 8px;
-    font-size: 3em;
-/*    float:left;*/
+    color: #428BCA;
 }
-section.who:before {
+.who:before {
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
@@ -124,10 +264,9 @@ section.who:before {
     text-decoration: inherit;
     content: "\f0c0";
     padding-right: 8px;
-    font-size: 3em;
-/*    float:left;*/
+    color: #D40062;
 }
-section.where:before {
+.where:before {
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
@@ -135,10 +274,9 @@ section.where:before {
     text-decoration: inherit;
     content: "\f041";
     padding-right: 8px;
-    font-size: 3em;
-/*    float:left;*/
+    color: #2FD367;
 }
-section.what:before {
+.what:before {
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
@@ -146,17 +284,16 @@ section.what:before {
     text-decoration: inherit;
     content: "\f0a1";
     padding-right: 8px;
-    font-size: 3em;
-/*    float:left;*/
+    color: #F8B820;
 }
 section.when, section.where, section.what, section.who {
     clear:both;
     min-height:5em;
-/*    padding-top:.6em;*/
-/*    padding-right:1em;*/
-/*    padding-bottom:1em;*/
-    border-bottom:1px solid #666;
+    border-bottom:4px solid #E5E5B5;
     width: 100%;
+}
+section.when:before, section.where:before, section.what:before, section.who:before {
+    font-size: 3em;
 }
 section.when>div.field, section.where>div.field, section.what>div.field, section.who>div.field {
     width: 85%;
@@ -166,20 +303,155 @@ section.when>div.field, section.where>div.field, section.what>div.field, section
     margin:0;
     padding:4px;
 }
+.coloredWhat{
+    color:#F8B820;
+}
+.coloredWhere{
+    color:#2FD367;
+}
+.coloredWhen{
+    color:#428BCA;
+}
+.coloredWho{
+    color:#D40062;
+}
+.bgWhat{
+    background-color:#F8B820;
+}
+.bgWhere{
+    background-color:#2FD367;
+}
+.bgWhen{
+    background-color:#428BCA;
+}
+.bgWho{
+    background-color:#D40062;
+}
+.btn-what{
+    border:2px solid #F8B820;
+    margin: 4px;
+}
+.btn-where{
+    border: 2px solid #2FD367;
+    margin: 4px;
+}
+.btn-when{
+    border: 2px solid #428BCA;
+    margin: 4px;
+}
+.btn-who{
+    border: 2px solid #D40062;
+    margin: 4px;
+}
+.btn-what:hover{
+    background-color:#F8B820;
+    border-color:#D0960B;
+}
+.btn-where:hover{
+    background-color:#2FD367;
+    border-color:#35AB5D;
+}
+.btn-when:hover{
+    background-color:#428BCA;
+    border-color:#457197;
+}
+.btn-who:hover{
+    background-color:#D40062;
+    border-color:#982951;
+}
+/* OVERRIDES BOOTSTRAP BTN */
+.btn-info{
+    background-color:#00B4A0;
+}
+.btn-success{
+    background-color:#2FD367;
+}
 
+/* NODES */
+h3.node-title {
+    margin-bottom:0;
+}
+.field-name-field-cart-artist, .field-name-field-cart-curator, .field-name-field-cart-sponsor, .field-name-field-cart-organizator{
+    padding-bottom:10px;
+}
+/* HEADINGS */
+h4.field-content {
+    margin-bottom: 4px;
+}
+
+/* VMODE MINIMAL */
+.node-cart-vmode-minimal h2 {
+    display: none;
+}
+.node-cart-vmode-minimal .panel-display {
+    float: left;
+    padding: 4px;
+}
+.node-cart-vmode-minimal .panel-display img {
+    float: none!important;   
+}
+
+/* EXHIBITS */
 .exhibit {
     margin-bottom:7px;
 }
 .exhibit h4{
     margin-top:-2px;
 }
-h3.node-title {
-    margin-bottom:0;
-}
 .cv-exhibit {
     clear:both;
 }
 
+/* ORGANIZATION */
+.node-cart-organization .field-name-field-cart-location, .node-cart-organization .field-type-taxonomy-term-reference, .node-cart-organization .field-name-body {
+    padding-bottom:4px;
+}
+
+/* CATALOG NODE PANES */
+.node-cart-catalog>.content>.field {
+    padding:0 10px 10px 0;
+}
+.node-type-cart-catalog h2.pane-title {
+    margin-top:0;
+}
+
+/* MASONRY CARD */
+.card {
+    background:#E5E5B5;
+    padding:0;
+    border:1px solid #f3f3f3;
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+}
+.masonry-item{
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.card div.panel-pane, .card div.views-field{
+    padding:0 10px 10px 10px;
+}
+.card div.pane-node-field-cart-image, .card div.pane-node-field-cart-geolocation, .card div.views-field-field-cart-image{
+    padding: 0!important;
+}
+.card .pane-node-field-cart-geolocation img{
+    width:100%!important;
+}
+.card .img-responsive.img-circle {
+    margin: 10px 12px 10px 10px;
+}
+.card h2.pane-title {
+    font-size:22px;
+    margin-bottom:0;
+}
+.card .pane-node-content {
+    padding:0 10px 10px 10px;
+}
+/*.card .pane-node-content .field {*/
+/*    padding-bottom:8px;*/
+/*}*/
+
+/* CONTENT COMPLETE PANE */
 #content-complete-percent-bar-wrapper {
     border:0;
     padding:0;
@@ -197,10 +469,20 @@ h3.node-title {
     background:#428BCA;
 }
 .content-complete-percent-bar-100 {
-    background:#5CB75C;
+/*    background:#5CB75C;*/
+/*    height:14px;*/
+    background:#000;
 }
-/* fields inline */
+/*.content-complete-percent-bar-100:before {*/
+/*    content: "100% complete!";*/
+/*    position: relative;*/
+/*    top: -4px;*/
+/*    padding-left: 2px;*/
+/*    font-size: 12px;*/
+/*    color: #FEFEFE;*/
+/*}*/
 
+/* FIELDS INLINE */
 .field-name-field-cart-artist .field-item {
     float: left;
 }
@@ -249,84 +531,26 @@ h3.node-title {
 .street-block, .form-item-field-cart-based-und-0-postal-code {
     display:none;
 }
-.node-cart-organization .field-name-field-cart-location, .node-cart-organization .field-name-field-cart-venue-boolean, .node-cart-organization .field-type-taxonomy-term-reference, .node-cart-organization .field-name-body {
-    padding:4px;
-}
 
-.navbar.container {
-    margin-top: 4px;
-}
-.navbar {
-    margin-bottom: 8px;
-}
+/* LINKS PANE */
 .view-cart-view-links .views-field {
     padding-right:8px;
 }
-#leaflet-map {
-    margin-bottom:8px;
-}
-.card {
-    background:#ffffff;
-    padding:0;
-    border:1px solid #f3f3f3;
-    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
-}
-.masonry-item{
-    padding-bottom:10px;
-    padding-left:10px;
-    padding-right:10px;
-}
-.card > div {
-    padding:0 10px 10px 10px;
-}
-.card .views-field-field-cart-image{
-    padding:0!important;
-}
-.card .img-responsive.img-circle {
-    margin: 0 12px 8px 0;
-}
-.card h2.pane-title {
-    font-size:22px;
-    margin-bottom:0;
-}
-.card .pane-node-content {
-    padding:0 10px 10px 10px;
-}
-.card .pane-node-content .field {
-    padding-bottom:8px;
-}
-.node-cart-catalog>.content>.field {
-    padding:0 10px 10px 0;
 
+/* ABOUT PAGE */
+body.body-about{
+/*    background:url('http://localhost/retebuonvivere/cartac3/sites/default/files/beautiful_poppies_field-wallpaper-1920x1080.jpg') no-repeat fixed;*/
 }
-.node-type-cart-catalog h2.pane-title {
-    margin-top:0;
+.page-about .panel-pane {
+    background-color:#E5E5B5;
+    padding:14px 24px;
 }
-/* Calendar */
-.view .date-nav-wrapper .date-prev a, .view .date-nav-wrapper .date-next a {
-    padding: 5px;
-    background: none;
-}
-.calendar-calendar div.calendar {
-    font-size: small;
-}
-.calendar-calendar .month-view .full td.multi-day div.monthview,
-.calendar-calendar .week-view .full td.multi-day div.weekview,
-.calendar-calendar .day-view .full td.multi-day div.dayview {
-    background: #F8B820;
+.page-about img.img-responsive{
+    margin:0 0 10px 14px;
 }
 
-.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
-.calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
-.calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
-.calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
-  background: #27AB78;
-  -moz-border-radius: 0px 5px 5px 0px;
-  border-radius: 0px 5px 5px 0px;
+/* EDIT - BACKEND */
+.page-node-edit .img-coffeebook{
+    max-width:300px!important;
 }
-.calendar-calendar .day-view td .stripe,
-.calendar-calendar .month-view .full td .stripe,
-.calendar-calendar .week-view .full td .stripe {
-  height: 4px;
-}
+

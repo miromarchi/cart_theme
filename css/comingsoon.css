@@ -1,0 +1,37 @@
+.comingsoon .comingsoon-title{
+    font-size:40px;
+    color:#fefefe;
+    font-weight:bold;
+    border:0 solid #fefefe;
+    letter-spacing:8px;
+    padding:14px;
+/*    background-color:#2FD367;*/
+    border-radius:90px;
+    width:auto;
+}
+.comingsoon{
+   background-color:#56544C;    
+/*    background: repeating-linear-gradient(*/
+/*        54deg,*/
+/*        #E5E5B5,*/
+/*        #E5E5B5 10px,*/
+/*        #56544C 10px,*/
+/*        #56544C 20px*/
+/*        );*/
+}
+.striped{
+    background: repeating-linear-gradient(
+        177deg,
+        #2FD367,
+        #428BCA 30px,
+        #F8B820 60px,
+        #D40062 90px,
+        #2FD367 120px
+    );
+    height:14px;
+}
+.norow-3 {
+    border-bottom: 10px solid #E5E5B5;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}

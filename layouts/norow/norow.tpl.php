@@ -13,14 +13,21 @@
 <!-- 
 <div class="panel-display moscone-flipped clearfix container <?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
 -->
-
-	<div class="">
-		<div class="">
+	<div class="clearfix">
+		<div class="column col-md-6 left"">
+		    <?php print $content['left']; ?>
+		</div>
+		<div class="column col-md-6 right">
+		    <?php print $content['right']; ?>
+		</div>
+	</div>
+	<div class="clearfix">
+		<div class="column contentmain">
 		    <?php print $content['contentmain']; ?>
 		</div>
 	</div>
-	<div class="">
-		<div class="">
+	<div class="clearfix">
+		<div class="column">
     		<?php print $content['footer']; ?>
 		</div>
 	</div>

@@ -1,5 +1,8 @@
-#0F9C8D
-#F8B820
-
-
-
+verde       where       #2FD367
+blu         when        #428BCA
+fucsia      who         #D40062
+mango       what        #F8B820
+petrolio    links       #00B4A0
+beige       borders     #E5E5B5
+pannetta    background  #fefefe
+warm gray   text        #56544C
