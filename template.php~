@@ -38,16 +38,17 @@ function cart_theme_preprocess_html(&$vars) {
       ));
 }
 /*
- *  Preprocess page.tpl.php to inject the $search_box variable.
+ *  Preprocess page.tpl.php to inject the $search_box variable (first three lines), and add an images_path for structural images.
  */
 function cart_theme_preprocess_page(&$variables){
   $search_form = drupal_get_form('search_form');
   $search_box = drupal_render($search_form);
   $variables['search_box'] = $search_box;
+  $variables['images_path'] = $variables['base_path'] . $variables['directory'] . '/stucture';
 }
 
 /*
- *  Form alter to add missing bootstrap classes and tole to search form.
+ *  Form alter to add missing bootstrap classes and role to search form.
  */
 function cart_theme_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_form') {
@@ -55,5 +56,6 @@ function cart_theme_form_alter(&$form, &$form_state, $form_id) {
     $form['#attributes']['role'][] = 'search';
   }
 }
+
 
 ?>

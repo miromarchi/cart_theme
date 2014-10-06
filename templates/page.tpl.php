@@ -100,6 +100,7 @@
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
           <?php endif; ?>
+          
           <?php if (!empty($secondary_nav)): ?>
             <?php print render($secondary_nav); ?>
           <?php endif; ?>
@@ -165,6 +166,6 @@
 
   </div>
 </div>
-<footer class="footer container">
+<footer class="footer container-fluid">
   <?php print render($page['footer']); ?>
 </footer>

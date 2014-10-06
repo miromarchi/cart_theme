@@ -1,7 +1,3 @@
-/* Trick to hide one fielter from map view (to allow sinc filtering of two panes) */
-#views-exposed-form-cart-view-map-panel-pane-1 {
-    display: none;
-}
 /* MAIN */
 a{
     color:#000;
@@ -28,6 +24,7 @@ h1.site-title {
     line-height:50px;
     position: relative;
     left: 15px;
+    pointer-events: none;
 }
 
 .form-control{
@@ -92,6 +89,33 @@ a.logo{
 .navbar .logo {
     padding-right:0;
 }
+#btn-add-exhibit{
+    padding:4px 9px!important;
+    color: #FFF!important;
+    background-color: #2FD367!important;
+    display:inline-block!important;
+}
+@media(min-width:768px){
+    #btn-add-exhibit{
+        top:9px;
+    }
+}
+@media(max-device-width:768px){
+    #btn-add-exhibit{
+        left:20px;
+    }
+}
+
+#btn-add-exhibit:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f067";
+    padding-right: 8px;
+    font-size: 1.3em;
+}
 
 /* FRONT PAGE */
 .front-focus{
@@ -114,8 +138,12 @@ a.logo{
 .norow-1 {
     background-color:#00B4A0;
 }
-.norow-1, .norow-2, .norow-3{
+.norow-1, .norow-2{
     border-bottom:15px solid #E5E5B5;
+    padding-top:3em;
+    padding-bottom:3em;
+}
+.norow-3{
     padding-top:3em;
     padding-bottom:3em;
 }
@@ -240,6 +268,11 @@ p.p-links{
 #edit-date-filter-wrapper input,#edit-date-filter-1-wrapper input {
     max-width:160px;
 }
+/* Trick to hide one filter from map view (to allow sinc filtering of two panes) */
+#views-exposed-form-cart-view-map-panel-pane-1, .view-cart-view-map.view-display-id-panel_pane_1 .view-empty, #views-exposed-form-cart-view-map-venues-panel-pane-1, .view-cart-view-map-venues.view-display-id-panel_pane_1 .view-empty {
+    display: none;
+}
+
 /* BADGES */
 .badge{
     background-color:#56544C;
@@ -368,15 +401,21 @@ section.when>div.field, section.where>div.field, section.what>div.field, section
 }
 
 /* NODES */
-h3.node-title {
-    margin-bottom:0;
-}
 .field-name-field-cart-artist, .field-name-field-cart-curator, .field-name-field-cart-sponsor, .field-name-field-cart-organizator{
     padding-bottom:10px;
 }
+.field-name-field-cart-dates{
+    text-align: center;
+}
 /* HEADINGS */
+h3.node-title {
+    margin-bottom:0;
+}
 h4.field-content {
     margin-bottom: 4px;
+}
+.node-type-cart-person .pane-node-content h2.pane-title{
+    text-align:center;
 }
 
 /* VMODE MINIMAL */
@@ -431,10 +470,10 @@ h4.field-content {
 .card div.panel-pane, .card div.views-field{
     padding:0 10px 10px 10px;
 }
-.card div.pane-node-field-cart-image, .card div.pane-node-field-cart-geolocation, .card div.views-field-field-cart-image{
+.card div.pane-node-field-cart-image, .card div.pane-node-field-cart-geolocation, .card div.views-field-field-cart-image, .card .views-field-field-cart-geolocation{
     padding: 0!important;
 }
-.card .pane-node-field-cart-geolocation img{
+.card .pane-node-field-cart-geolocation img, .card .views-field-field-cart-geolocation img{
     width:100%!important;
 }
 .card .img-responsive.img-circle {
@@ -471,7 +510,7 @@ h4.field-content {
 .content-complete-percent-bar-100 {
 /*    background:#5CB75C;*/
 /*    height:14px;*/
-    background:#000;
+    background:#E5E5B5;
 }
 /*.content-complete-percent-bar-100:before {*/
 /*    content: "100% complete!";*/
@@ -536,6 +575,10 @@ h4.field-content {
 .view-cart-view-links .views-field {
     padding-right:8px;
 }
+.views-field-field-cart-wikipedia-link{
+    font-family: "Times New Roman", Times, serif;
+    font-weight:bold;
+}
 
 /* ABOUT PAGE */
 body.body-about{
@@ -547,6 +590,18 @@ body.body-about{
 }
 .page-about img.img-responsive{
     margin:0 0 10px 14px;
+}
+
+/* FOOTER */
+.footer{
+    background:#f4f4f4;
+    border-bottom:50px solid #f4f4f4;
+}
+.footer .tb-rl{
+    margin-bottom:10px;
+}
+.btn-icon-button{
+    padding:0;
 }
 
 /* EDIT - BACKEND */
