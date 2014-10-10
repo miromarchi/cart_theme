@@ -98,6 +98,7 @@ a.logo{
 @media(min-width:768px){
     #btn-add-exhibit{
         top:9px;
+        margin-right:10px;
     }
 }
 @media(max-device-width:768px){
@@ -116,6 +117,10 @@ a.logo{
     padding-right: 8px;
     font-size: 1.3em;
 }
+.active #btn-add-exhibit {
+    border-top:1px solid #fefefe;
+    border-bottom:1px solid #fefefe;    
+}
 
 /* FRONT PAGE */
 .front-focus{
@@ -125,15 +130,28 @@ a.logo{
     font-size:32px;
     font-weight:bold;
     word-wrap: break-word;
-    padding-top:30px;
+    padding-top:20px;
     letter-spacing:8px;
     color:#333;
+}
+.front-focus p {
+    margin: 20px 20px 0;
 }
 .front-logo {
     float:left;
 }
 .front-logo-r{
     float:right;
+}
+@media(max-device-width:768px){
+    .front-focus img {
+        width: 50px;
+        margin: 0 1px;
+/*        float:none;*/
+    }
+}
+.invisible-separator{
+    font-size:0;
 }
 .norow-1 {
     background-color:#00B4A0;
@@ -236,6 +254,9 @@ p.p-links{
 .calendar-calendar .month-view .full tr.even td.today {
     border-left: 2px solid #F8B820;
     border-right: 2px solid #F8B820;
+}
+.mini-day-on a{
+    font-weight:bold!important;
 }
 .today {
     background-color: #F8B820!important;
