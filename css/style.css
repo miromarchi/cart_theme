@@ -67,8 +67,8 @@ h1.site-title {
     color:#333333!important;
 }
 .navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
-    color: #555;
-    background-color: #F8B820!important;
+    color: #fefefe!important;
+    background-color: #00B4A0!important;
     border-left:1px solid #fefefe;
     border-right:1px solid #fefefe;
 }
@@ -91,13 +91,13 @@ a.logo{
 }
 #btn-add-exhibit{
     padding:5px 9px!important;
-    color: #FFF!important;
-    background-color: #2FD367!important;
+/*    color: #FFF!important;*/
+    background-color: #F8B820!important;
     display:inline-block!important;
 }
 @media(min-width:768px){
     #btn-add-exhibit{
-        top:9px;
+        top:4px;
         margin-right:10px;
     }
 }
@@ -381,7 +381,7 @@ section.when>div.field, section.where>div.field, section.what>div.field, section
 .bgWho{
     background-color:#D40062;
 }
-.btn-what{
+.btn-what, .btn-add-exhibit, .btn-add-catalog{
     border:2px solid #F8B820;
     margin: 4px;
 }
@@ -393,32 +393,66 @@ section.when>div.field, section.where>div.field, section.what>div.field, section
     border: 2px solid #428BCA;
     margin: 4px;
 }
-.btn-who{
+.btn-who, .btn-add-person{
     border: 2px solid #D40062;
     margin: 4px;
 }
-.btn-what:hover{
-    background-color:#F8B820;
-    border-color:#D0960B;
+.btn-what:hover, .btn-add-exhibit:hover, .btn-add-catalog:hover{
+    background-color:#F8B820!important;
+    border-color:#F8B820!important;
+    color:#fff;
 }
 .btn-where:hover{
     background-color:#2FD367;
-    border-color:#35AB5D;
+    border-color:#2FD367;
+    color:#fff;
 }
 .btn-when:hover{
     background-color:#428BCA;
-    border-color:#457197;
+    border-color:#428BCA;
+    color:#fff;
 }
-.btn-who:hover{
-    background-color:#D40062;
-    border-color:#982951;
+.btn-who:hover, .btn-add-person:hover{
+    background-color:#D40062!important;
+    border-color:#D40062!important;
+    color:#fff;
+}
+.btn-add-exhibit, .btn-add-catalog, .btn-add-person, .btn-add-org{
+    text-align: left;
+}
+.btn-add-org{
+    border-right:2px solid #D40062;
+    border-top:2px solid #D40062;
+    border-left:2px solid #2FD367;
+    border-bottom:2px solid #2FD367;
+    margin: 4px;
+}
+.btn-add-org:hover{
+    background:repeating-linear-gradient(135deg, #2FD367, #2FD367 50%, #D40062 50%, #D40062 100%);
+    border-right-color: #D40062;
+    border-top-color: #D40062;
+    border-left-color: #2FD367;
+    border-bottom-color: #2FD367;
+    color:#fff;
+}
+.btn-margin{
+    margin:4px;
+    border-width:2px;
 }
 /* OVERRIDES BOOTSTRAP BTN */
 .btn-info{
     background-color:#00B4A0;
 }
+.btn-info:hover{
+    border-color:#00B4A0;
+}
 .btn-success{
     background-color:#2FD367;
+    border-color:#2FD367;
+}
+.btn-success:hover{
+    background-color:#48B76E;
+    border-color:#48B76E;
 }
 
 /* NODES */
