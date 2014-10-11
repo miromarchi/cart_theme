@@ -240,6 +240,15 @@ p.p-links{
     min-height:150px!important;
     max-height:900px!important;
 }
+/* Mini */
+.mini-day-on a{
+    font-weight:bold!important;
+}
+.mini td.has-events{
+    background-color: #E5E5B5;
+}
+
+
 /* TODAY */
 .calendar-calendar .month-view .full td.date-box.today {
     border-width: 2px 2px 0 2px;
@@ -254,9 +263,6 @@ p.p-links{
 .calendar-calendar .month-view .full tr.even td.today {
     border-left: 2px solid #F8B820;
     border-right: 2px solid #F8B820;
-}
-.mini-day-on a{
-    font-weight:bold!important;
 }
 .today {
     background-color: #F8B820!important;
