@@ -426,6 +426,16 @@ section.when>div.field, section.where>div.field, section.what>div.field, section
 .btn-add-exhibit, .btn-add-catalog, .btn-add-person, .btn-add-org{
     text-align: left;
 }
+.btn-add-exhibit:before, .btn-add-catalog:before, .btn-add-person:before, .btn-add-org:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f067";
+    padding-right: 8px;
+    font-size: 1.3em;
+}
 .btn-add-org{
     border-right:2px solid #D40062;
     border-top:2px solid #D40062;
@@ -444,6 +454,7 @@ section.when>div.field, section.where>div.field, section.what>div.field, section
 .btn-margin{
     margin:4px;
     border-width:2px;
+    text-align:left;
 }
 /* OVERRIDES BOOTSTRAP BTN */
 .btn-info{
