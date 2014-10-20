@@ -375,6 +375,12 @@ section.when>div.field, section.where>div.field, section.what>div.field, section
 .coloredWho{
     color:#D40062;
 }
+.bgNav, .maintenance-page.in-maintenance{
+    background-color:#E5E5B5;
+}
+.bgCanvas{
+    background-color:#fefefe;
+}
 .bgWhat{
     background-color:#F8B820;
 }
@@ -458,10 +464,12 @@ section.when>div.field, section.where>div.field, section.what>div.field, section
 }
 /* OVERRIDES BOOTSTRAP BTN */
 .btn-info{
-    background-color:#00B4A0;
+    background-color:#000;
+    border-color:#000;
 }
 .btn-info:hover{
-    border-color:#00B4A0;
+    border-color:#00B4A0!important;
+    background-color:#00B4A0!important;
 }
 .btn-success{
     background-color:#2FD367;
@@ -470,6 +478,30 @@ section.when>div.field, section.where>div.field, section.what>div.field, section
 .btn-success:hover{
     background-color:#48B76E;
     border-color:#48B76E;
+}
+.btn-image-gallery:before{
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f03e";
+    padding-right: 8px;
+/*    color: #D40062;*/
+}
+.btn-shop:before{
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f02d";
+    padding-right: 8px;
+}
+.btn-shop{
+    margin:8px;
+/*    background-color:#000;*/
+/*    border-color:#000;*/
 }
 
 /* NODES */
