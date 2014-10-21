@@ -511,7 +511,7 @@ section.when>div.field, section.where>div.field, section.what>div.field, section
 .field-name-field-cart-dates{
     text-align: center;
 }
-/* HEADINGS */
+/* TYPHOGRAPHY */
 h3.node-title {
     margin-bottom:0;
 }
@@ -521,7 +521,23 @@ h4.field-content {
 .node-type-cart-person .pane-node-content h2.pane-title{
     text-align:center;
 }
-
+blockquote {
+  border-left: 5px solid #D40062;
+}
+blockquote footer, blockquote small, blockquote .small {
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857143;
+  color: #777;
+}
+blockquote footer:before, blockquote small:before, blockquote .small:before {
+  content: '\2014 \00A0';
+}
+.anchor-top{
+  position:relative;
+  top:-150px;
+  display:inline-block;
+}
 /* VMODE MINIMAL */
 .node-cart-vmode-minimal h2 {
     display: none;
